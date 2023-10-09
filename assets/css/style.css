@@ -3,26 +3,27 @@
   padding: 0;
 }
 header {
+  grid-area: header;
   background-color: darkmagenta;
   color: white;
   text-align: center;
   padding: 10px;
 }
 main {
-  display: flex;
+  grid-area: main;
+  /*display: flex;*/
 }
 main .aside-bar {
   background-color: pink;
-  width: 250px;
   min-height: 86vh;
   padding: 25px;
 }
 main .aside-bar ul {
   list-style: none;
 }
-main .grilla {
+/*main .grilla {
   display: flex;
-}
+}*/
 main .grilla .card {
   text-align: center;
   padding: 20px;
@@ -32,6 +33,25 @@ main .grilla .card img {
   height: 220px;
 }
 footer {
+  grid-area: footer;
   text-align: center;
   padding: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+  gap: 10px;
+}
+.grid-container main {
+  display: grid;
+  grid-template-columns: auto 80%;
+  gap: 10px;
+}
+.grid-container .grilla {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
 }
