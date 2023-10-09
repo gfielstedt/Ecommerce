@@ -20,9 +20,19 @@ main .aside-bar {
 main ul {
   list-style: none;
 }
+main .grilla {
+  display: flex;
+}
+main .grilla .card img {
+  width: 250px;
+  height: 250px;
+}
+main .grilla .card {
+  text-align: center;
+  padding: 10px;
+}
 footer {
   background-color: darkmagenta;
   color: white;
-  text-align: center;
-  padding: 13.5px;
+  padding: 10px;
 }
