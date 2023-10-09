@@ -8,3 +8,9 @@ header {
   text-align: center;
   padding: 10px;
 }
+footer {
+  background-color: darkmagenta;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
